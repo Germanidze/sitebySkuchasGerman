@@ -1,0 +1,517 @@
+{% extends 'timetable/base.html'%}
+{% block title %}
+    Расписание
+{% endblock %}
+{% block content %}
+
+<style>
+        /* CSS стили для таблицы */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #E6E6FA;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+<table>
+        <thead>
+            <tr>
+                <th></th> <!-- Пустая ячейка в левом верхнем углу таблицы -->
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+                <th>Суббота</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="40"> <h1 size="10">5</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h1 size="10">6</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h1 size="10">7</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h1 size="10">8</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h1 size="10">9</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h1 size="10">10</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h1 size="10">11</h1></td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Понедельник" and el.clas == "5"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Вторник"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Среда"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Четверг"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Пятница"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+                <td width="230">
+                <div class="feature">
+                    {% for el in timetablos%}
+                    <div class="tablichka">
+                        {% if el.title == "Суббота"%}
+                        <p>{{el.uroki}}</p>
+                        {%endif%}
+                    </div>
+                    {% endfor %}
+                </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

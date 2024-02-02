@@ -1,0 +1,48 @@
+body{
+    background: #2c2c2c
+}
+aside{
+    float: top;
+    background: #181818;
+    width: 100%;
+    height: 10%;
+    padding: 2%;
+    border-bottom: 5px solid #4d4d4d;
+}
+main{
+    color: #fff;
+}
+main .feature{
+    float: left;
+    width: 75%;
+    color: #8B4513;
+    margin-top: 0px 0px 0px 0px;
+    text-align: center;
+}
+.tablichka{
+    float: left;
+    clear: both;
+    width: 230px;
+    margin: 5px 0;
+    background: #F0E68C;
+    text-align: left;
+}
+
+.bobi {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px 0px 38%;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #BDB76B 0%, #DEB887 51%, #EEE8AA 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.bobi:hover {
+  background-position: right center;
+}
